@@ -138,7 +138,7 @@
 	async function prediction() {
 		if (!theme && !prompt) {
 			showError('Theme not selected');
-		} else {
+		} else if (photosGenerated.length < 50){
 			try {
 				generating = true;
 				const response = await fetch('/api/prediction', {
