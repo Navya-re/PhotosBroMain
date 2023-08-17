@@ -39,8 +39,8 @@ export const GET: RequestHandler = async (event) => {
 			throw new Error('Model not trained');
 		}
 
-		if (userInfo.counter >= 100) {
-			throw new Error('You cannot generate more than 100 photos');
+		if (userInfo.counter >= 50) {
+			throw new Error('You cannot generate more than 50 photos');
 		}
 
 		const predictionResponse = await getPredictionStatus(predictionID);
@@ -120,12 +120,12 @@ export const _generatePhotos = async (payload: GeneratePayload, userInfo: UserIn
 		}
 	}
 	quantity = getLimitedQuantity(quantity || 1);
-	const quantityLimit = 100;
+	const quantityLimit = 50;
 	if (quantity > quantityLimit - userInfo.counter) {
 		if (quantityLimit - userInfo.counter > 0) {
 			quantity = quantityLimit - userInfo.counter;
 		} else {
-			throw new Error('You have already generated 100 photos');
+			throw new Error('You have already generated 50 photos');
 		}
 	}
 
