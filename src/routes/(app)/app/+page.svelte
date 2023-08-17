@@ -138,7 +138,7 @@
 	async function prediction() {
 		if (!theme && !prompt) {
 			showError('Theme not selected');
-		} else if (photosGenerated.length < 50){
+		} else if (userInfo.counter < 110){
 			try {
 				generating = true;
 				const response = await fetch('/api/prediction', {
@@ -657,7 +657,7 @@
 				</p>
 			</Input>
 
-			{#if userInfo.trained && photosGenerated.length <50}
+			{#if userInfo.trained && userInfo.counter < 110}
 				<Button
 					size="small"
 					type="button"
