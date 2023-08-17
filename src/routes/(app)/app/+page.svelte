@@ -55,7 +55,7 @@
 	let theme = '';
 	let prompt = '';
 	let seed = '';
-	let quantity = 50;
+	let quantity = 10;
 	let spoilerOpen: boolean | undefined = undefined;
 
 	async function onUploadSubmit() {
@@ -138,7 +138,7 @@
 	async function prediction() {
 		if (!theme && !prompt) {
 			showError('Theme not selected');
-		} else if (photosGenerated.length < 40){
+		} else if (photosGenerated.length < 50){
 			try {
 				generating = true;
 				const response = await fetch('/api/prediction', {
@@ -592,8 +592,8 @@
 				block
 				containerClass="w-full max-w-xs"
 				bind:value={quantity}
-				min={1}
-				max={20}
+				min={10}
+				max={10}
 			/>
 
 			<div class="form-control w-full max-w-xs">
