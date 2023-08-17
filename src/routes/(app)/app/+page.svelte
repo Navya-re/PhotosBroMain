@@ -656,7 +656,7 @@
 				</p>
 			</Input>
 
-			{#if userInfo.trained}
+			{#if userInfo.trained && photosGenerated.length <50}
 				<Button
 					size="small"
 					type="button"
