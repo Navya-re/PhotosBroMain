@@ -89,7 +89,7 @@ export async function runTrain(
 				instance_prompt: `a photo of a ${PRIVATE_REPLICATE_INSTANCE_TOKEN} ${instanceClass}`,
 				class_prompt: `a photo of a ${instanceClass}`,
 				instance_data: `${PUBLIC_WEBSITE_HOST}/api/webhooks/${user.id}/instance_data`,
-				max_train_steps: Number(PRIVATE_REPLICATE_MAX_TRAIN_STEPS) || 2000,
+				max_train_steps: Number(PRIVATE_REPLICATE_MAX_TRAIN_STEPS) || 3000,
 				num_class_images: 200,
 				learning_rate: 1e-6
 			},
