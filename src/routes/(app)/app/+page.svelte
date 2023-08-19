@@ -55,7 +55,7 @@
 	let theme = '';
 	let prompt = '';
 	let seed = '';
-	let quantity = 10;
+	let quantity = 50;
 	let spoilerOpen: boolean | undefined = undefined;
 
 	async function onUploadSubmit() {
@@ -593,8 +593,8 @@
 				block
 				containerClass="w-full max-w-xs"
 				bind:value={quantity}
-				min={10}
-				max={10}
+				min={50}
+				max={50}
 			/>
 
 			<div class="form-control w-full max-w-xs">
