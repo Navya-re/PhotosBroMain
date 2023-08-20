@@ -152,7 +152,7 @@
 					throw (await response.json()).message;
 				}
 				updateUserInfo();
-				prediction();
+
 			} catch (error) {
 				showError(error);
 			} finally {
