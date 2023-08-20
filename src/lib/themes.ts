@@ -4,7 +4,7 @@ export enum InstanceClass {
 	youngm = 'Young Male',
 	youngf = 'Young Female',
 	man = 'man',
-	woman = 'Woman',
+	woman = 'Woman'
 }
 
 export interface Theme {
