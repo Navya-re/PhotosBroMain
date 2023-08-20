@@ -575,9 +575,9 @@
 					</label>
 					<select class="select select-bordered" id="instance_class" bind:value={instanceClass}>
 						<option disabled selected />
-						<option value="couple">Young Male</option>
+						<option value="young male">Young Male</option>
 						<option value="man">Male</option>
-						<option value="coupless">Young Female</option>
+						<option value="young maless">Young Female</option>
 						<option value="woman">Female</option>
 					</select>
 				</div>

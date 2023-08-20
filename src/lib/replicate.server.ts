@@ -40,7 +40,7 @@ async function getClient<T extends object>({
 }
 
 export const getRefinedInstanceClass = (instanceClass: string) => {
-		return instanceClass === 'man' ? 'male' : instanceClass === 'couple' ? 'young male' : instanceClass === 'coupless' ? 'young female' : instanceClass === 'woman' ? 'female' : instanceClass;
+		return instanceClass === 'man' ? 'male' : instanceClass === 'young male' ? 'young male' : instanceClass === 'young maless' ? 'young female' : instanceClass === 'woman' ? 'female' : instanceClass;
 };
 
 export const replacePromptToken = (prompt: string, instanceClass: string) => {
