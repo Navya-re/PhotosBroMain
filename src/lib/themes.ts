@@ -17,7 +17,7 @@ export const prompts: Theme[] = [
 		name: 'viking',
 		instance_classes: [InstanceClass.man, InstanceClass.woman, InstanceClass.couple],
 		prompt:
-			'closeup portrait painting of ' + getRefinedInstanceClass + InstanceClass + ' cjw as a viking, ultra realistic, concept art, intricate details, powerful and fierce, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and charlie bowater and magali villeneuve and alphonse mucha, golden hour, horns and braids in hair, fur-lined cape and helmet, axe in hand, looking towards the camera.'
+			'closeup portrait painting of ' + InstanceClass + ' cjw as a viking, ultra realistic, concept art, intricate details, powerful and fierce, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and charlie bowater and magali villeneuve and alphonse mucha, golden hour, horns and braids in hair, fur-lined cape and helmet, axe in hand, looking towards the camera.'
 	},
 	{
 		name: 'paladin',
