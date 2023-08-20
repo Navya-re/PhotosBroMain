@@ -1,6 +1,6 @@
 export enum InstanceClass {
-	man = 'Man',
-	woman = 'Woman',
+	man = 'Male',
+	woman = 'Female',
 	couple = 'Couple',
 	dog = 'Dog',
 	cat = 'Cat'
@@ -17,7 +17,7 @@ export const prompts: Theme[] = [
 		name: 'viking',
 		instance_classes: [InstanceClass.man, InstanceClass.woman, InstanceClass.couple],
 		prompt:
-			'closeup portrait painting of @me as a viking, ultra realistic, concept art, intricate details, powerful and fierce, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and charlie bowater and magali villeneuve and alphonse mucha, golden hour, horns and braids in hair, fur-lined cape and helmet, axe in hand, looking towards the camera.'
+			'closeup portrait painting of ' + getRefinedInstanceClass + InstanceClass + ' cjw as a viking, ultra realistic, concept art, intricate details, powerful and fierce, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and charlie bowater and magali villeneuve and alphonse mucha, golden hour, horns and braids in hair, fur-lined cape and helmet, axe in hand, looking towards the camera.'
 	},
 	{
 		name: 'paladin',
@@ -83,13 +83,13 @@ export const prompts: Theme[] = [
 		name: 'samurai',
 		instance_classes: [InstanceClass.man, InstanceClass.woman, InstanceClass.couple],
 		prompt:
-			'closeup portrait of @me as a samurai warrior, war-torn landscape in the background, wearing a white and red armor, ready to fight, detailed textures, concept art, noir art, art by hinata matsumura, alphonse mucha, mike mignola, kazu kibuishi, and rev.matsuoka, digital painting, ultra-realistic.'
+			'closeup portrait of @me as a samurai warrior, war-torn landscape in the background, wearing a black and red armor, ready to fight, detailed textures, concept art, noir art, art by hinata matsumura, alphonse mucha, mike mignola, kazu kibuishi, and rev.matsuoka, digital painting, ultra-realistic.'
 	},
 	{
 		name: 'ninja',
 		instance_classes: [InstanceClass.man, InstanceClass.woman, InstanceClass.couple],
 		prompt:
-			'closeup portrait of @me as a ninja, wearing a white hood and suit, stealthy movements, dark night background, shadows and mist, detailed and realistic, art by kazuya yamashita, yuya kanzaki, yang zhizhuo, digital painting, photorealism, 8k resolution.'
+			'closeup portrait of @me as a ninja, wearing a black hood and suit, stealthy movements, dark night background, shadows and mist, detailed and realistic, art by kazuya yamashita, yuya kanzaki, yang zhizhuo, digital painting, photorealism, 8k resolution.'
 	},
 	{
 		name: 'pirate',
@@ -140,10 +140,10 @@ export const prompts: Theme[] = [
 			'closeup portrait of @me as a witch surrounded by magical elements, highly detailed, photorealism, digital painting, dark colors, grayscale, intricate details, art by yuumei, greg rutkowski, eddie hong, and charlie bowater, ultra realism, magical elements.'
 	},
 	{
-		name: 'white and white',
+		name: 'black and white',
 		instance_classes: [InstanceClass.man, InstanceClass.woman, InstanceClass.couple],
 		prompt:
-			'@me in the style of kentaro miura, 4 k, 8 k, absolute detail of even the smallest details and particles, beautiful shadows, beautiful art, white and white drawing, high rendering of the details of the environment, faces and characters'
+			'@me in the style of kentaro miura, 4 k, 8 k, absolute detail of even the smallest details and particles, beautiful shadows, beautiful art, black and white drawing, high rendering of the details of the environment, faces and characters'
 	},
 	{
 		name: 'pixar character',
