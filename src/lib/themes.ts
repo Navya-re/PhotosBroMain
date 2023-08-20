@@ -2,7 +2,7 @@ export enum InstanceClass {
 	man = 'Man',
 	woman = 'Woman',
 	couple = 'Couple',
-	dog = 'Dog',
+	coupless = 'coupless',
 	cat = 'Cat'
 }
 
