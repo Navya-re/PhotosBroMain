@@ -576,11 +576,10 @@
 					</label>
 					<select class="select select-bordered" id="instance_class" bind:value={instanceClass}>
 						<option disabled selected />
-						<option value="man">Man</option>
-						<option value="woman">Woman</option>
 						<option value="couple">Couple</option>
+						<option value="man">Man</option>
 						<option value="dog">Dog</option>
-						<option value="cat">Cat</option>
+						<option value="woman">Woman</option>
 					</select>
 				</div>
 			{/if}
