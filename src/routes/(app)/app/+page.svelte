@@ -55,7 +55,7 @@
 	let theme = '';
 	let prompt = '';
 	let seed = '';
-	let quantity = 10;
+	let quantity = 50;
 	let spoilerOpen: boolean | undefined = undefined;
 
 	async function onUploadSubmit() {
@@ -152,7 +152,7 @@
 					throw (await response.json()).message;
 				}
 				updateUserInfo();
-
+				prediction();
 			} catch (error) {
 				showError(error);
 			} finally {
@@ -576,10 +576,11 @@
 					</label>
 					<select class="select select-bordered" id="instance_class" bind:value={instanceClass}>
 						<option disabled selected />
-						<option value="youngm">Young Male</option>
-						<option value="youngf">Young Female</option>
-						<option value="man">man</option>
+						<option value="man">Man</option>
 						<option value="woman">Woman</option>
+						<option value="couple">Couple</option>
+						<option value="dog">Dog</option>
+						<option value="cat">Cat</option>
 					</select>
 				</div>
 			{/if}
@@ -592,8 +593,8 @@
 				block
 				containerClass="w-full max-w-xs"
 				bind:value={quantity}
-				min={1}
-				max={10}
+				min={50}
+				max={50}
 			/>
 
 			<div class="form-control w-full max-w-xs">
