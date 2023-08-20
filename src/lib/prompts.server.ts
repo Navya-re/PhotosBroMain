@@ -9,11 +9,9 @@ export function getSubjectName() {
 }
 
 export const getRefinedInstanceClass = (instanceClass: string | null) => {
-	return instanceClass === 'man' ? 'male' : instanceClass === 'couple' ? 'Young Male' : instanceClass === 'coupless' ? 'Young Female' : instanceClass === 'woman' ? 'female' : instanceClass;
-
+	return instanceClass === 'man' || instanceClass === 'woman' ? 'person' : instanceClass;
 };
 
 export function getReplacedPrompt(prompt: string, instanceClass: string | null) {
-	return prompt.replaceAll(`${getSubjectName()} ${getRefinedInstanceClass(instanceClass)}`,'@me');
+	return prompt.replaceAll('@me', `${getSubjectName()} ${getRefinedInstanceClass(instanceClass)}`);
 }
-
