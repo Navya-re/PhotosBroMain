@@ -15,7 +15,7 @@ export interface Theme {
 export const prompts: Theme[] = [
 	{
 		name: 'pixar character',
-		instance_classes: [InstanceClass.man, InstanceClass.woman, InstanceClass.youngmale],
+		instance_classes: [],
 		prompt:
 			'@me as a character from pixar, au naturel, PS2, PS1, hyper detailed, digital art, trending in artstation, cinematic lighting, studio quality, smooth render, unreal engine 5 rendered, octane rendered, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart.'
 	}
