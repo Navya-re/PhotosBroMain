@@ -55,7 +55,7 @@
 	let theme = '';
 	let prompt = '';
 	let seed = '';
-	let quantity = 10;
+	let quantity = 50;
 	let spoilerOpen: boolean | undefined = undefined;
 
 	async function onUploadSubmit() {
@@ -584,16 +584,7 @@
 			{/if}
 
 			<!-- Move to component -->
-			<Input
-				label="Quantity"
-				id="quantity"
-				type="number"
-				block
-				containerClass="w-full max-w-xs"
-				bind:value={quantity}
-				min={1}
-				max={5}
-			/>
+			
 
 			<div class="form-control w-full max-w-xs">
 				<label class="label">
