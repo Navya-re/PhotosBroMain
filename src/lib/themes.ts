@@ -17,7 +17,7 @@ export const prompts: Theme[] = [
 		name: 'pixar character',
 		instance_classes: [],
 		prompt:
-			'@me as a character from pixar, au naturel, PS2, PS1, hyper detailed, digital art, trending in artstation, cinematic lighting, studio quality, smooth render, unreal engine 5 rendered, octane rendered, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart.'
+			'realistic closeup portrait of @me as a jedi , highly detailed, science fiction, star wars concept art, intricate details, bright colors, golden hour, art by marko djurdjevic, greg rutkowski, wlop, fredperry, digital painting, rossdraws.'
 	}
 ];
 
