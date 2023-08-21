@@ -15,25 +15,21 @@ export interface Theme {
 export const prompts: Theme[] = [
 	{
 		name: 'viking',
-		instance_classes: [InstanceClass.man, InstanceClass.woman, InstanceClass.youngmale],
 		prompt:
 			'closeup portrait painting of @me as a viking, ultra realistic, concept art, intricate details, powerful and fierce, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and charlie bowater and magali villeneuve and alphonse mucha, golden hour, horns and braids in hair, fur-lined cape and helmet, axe in hand, looking towards the camera.'
 	},
 	{
 		name: 'paladin',
-		instance_classes: [InstanceClass.man, InstanceClass.woman, InstanceClass.youngmale],
 		prompt:
 			'closeup portrait of @me as a paladin, wearing brilliant white armor and a crown, fantasy concept art, artstation trending, highly detailed, beautiful landscape in the background, art by wlop, greg rutkowski, thierry doizon, charlie bowater, alphonse mucha, golden hour lighting, ultra realistic.'
 	},
 	{
 		name: 'hobbit',
-		instance_classes: [InstanceClass.man],
 		prompt:
 			'Closeup portrait of @me as a Hobbit, small, big brown eyes, green and brown clothing, detailed facial features, small feet, wispy hair, fantasy concept art, artstation trending, highly detailed, art by John Howe, Alan Lee, and Weta Workshop, earthy colors, looking into camera.'
 	},
 	{
 		name: 'harry potter',
-		instance_classes: [InstanceClass.man],
 		prompt:
 			'closeup portrait of @me as a Harry Potter character, magical world, wands, robes, Hogwarts castle in the background, enchanted forest, detailed lighting, art by jim kay, charlie bowater, alphonse mucha, ronald brenzell, digital painting, concept art.'
 	},
