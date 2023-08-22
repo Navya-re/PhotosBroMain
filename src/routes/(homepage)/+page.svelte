@@ -6,7 +6,7 @@
 	import { showInfo } from '$lib/utilities';
 	import Icon from '$lib/components/Icon.svelte';
 
-	const manAvatars = Array.from({ length: 10 }, (_, index) => `avatars/man (${index + 1}).jpeg`);
+	const manAvatars = Array.from({ length: 10 }, (_, index) => `avatars/man (${index + 1}).png`);
 	const womanAvatars = Array.from(
 		{ length: 12 },
 		(_, index) => `avatars/woman (${index + 1}).jpeg`
@@ -31,7 +31,7 @@
 <div class="relative pb-28">
 	<div class="absolute bottom-0 left-[20%] -ml-12 overflow-visible w-40 aspect-square">
 		<img
-			src="avatars/man_from.jpg"
+			src="avatars/man_from.jpeg"
 			loading="lazy"
 			alt="Demo source"
 			class="absolute z-10 w-40 aspect-square rotate-12 shadow-md rounded-md"
@@ -103,7 +103,7 @@
 					<span class="block text-3xl text-gray-400 font-bold line-through">500 INR</span>
 					<div class="relative flex justify-around mb-2">
 						<div class="relative flex flex-row items-end gap-1">
-							<span class="text-7xl text-gray-100 font-bold leading-0">449</span>
+							<span class="text-7xl text-gray-100 font-bold leading-0">299</span>
 							<span class="block text-sm text-blue-500 font-bold">INR</span>
 						</div>
 					</div>
@@ -157,14 +157,10 @@
 	</li>
 	<li class="step">
 		<span class="flex flex-row items-center gap-2"
-			><Icon name="neurology" />Launch the AI training</span
+			><Icon name="neurology" />Get 50 AI Avatars</span
 		>
 	</li>
-	<li class="step">
-		<span class="flex flex-row items-center gap-2"
-			><Icon name="add_a_photo" />Generate up to 100 avatars</span
-		>
-	</li>
+
 </ul>
 
 <div class="prose px-2 lg:prose-xl text-center pt-16 min-w-full">
@@ -200,16 +196,7 @@
 	</div>
 </div>
 <div class="fixed bottom-4 right-4">
-  <button class="p-2 rounded-full bg-gray-300 dark:bg-gray-800" on:click={toggleDarkMode}>
-    <svg class="h-6 w-6 text-black dark:text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M5 13l4 4L19 7"
-      />
-    </svg>
-  </button>
+
 </div>
 
 

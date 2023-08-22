@@ -9,7 +9,6 @@
 <footer class="footer footer-center p-10 bg-neutral text-neutral-content rounded">
 	<div class="grid grid-flow-col gap-4">
 		<a class="link link-hover" href="/">Home</a>
-		<a class="link link-hover" href="/login">Login</a>
 		<a class="link link-hover" href="/contacts">Contacts</a>
 	</div>
 	<div>
@@ -17,12 +16,12 @@
 			<a href="https://twitter.com/rishi_kesav_9" target="_blank" rel="noreferrer">
 				<Twitter />
 			</a>
-			<a href="https://www.instagram.com/rishikesav_m" target="_blank" rel="noreferrer">
+			<a href="https://www.instagram.com/photosbro_official" target="_blank" rel="noreferrer">
 				<Instagram />
 			</a>
 		</div>
 	</div>
 	<div>
-		<p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+		<p>Copyright © {new Date().getFullYear()} - All Rights Reserved</p>
 	</div>
 </footer>

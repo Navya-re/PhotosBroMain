@@ -263,7 +263,6 @@ export enum Icons {
 	'border_style' = 'e231',
 	'border_top' = 'e232',
 	'border_vertical' = 'e233',
-	'branding_watermark' = 'e06b',
 	'breakfast_dining' = 'ea54',
 	'brightness_1' = 'e3a6',
 	'brightness_2' = 'e3a7',

@@ -239,18 +239,22 @@
 			img.crossOrigin = 'anonymous';
 		}
 	};
+
 	async function downloadPhoto(photo: GeneratedPhoto) {
-		if (photo.complete) {
-			watermark([photo.url, 'logo-xs.png'], options)
-				.image(watermark.image.lowerRight(0.85))
-				.then((img: HTMLImageElement) => {
-					const a = document.createElement('a');
-					a.href = img.src;
-					a.download = photo.name.replace('.jpg', '.png');
-					a.click();
-				});
-		}
-	}
+    if (photo.complete) {
+        const response = await fetch(photo.url);
+        const blob = await response.blob();
+
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = photo.name.replace('.jpg', '.png');
+        a.click();
+
+        URL.revokeObjectURL(a.href); // Clean up the object URL
+    }
+}
+
+
 
 	async function loadPhotoGenerated() {
 		generatedPhotosLoading = true;
@@ -360,7 +364,7 @@
 	});
 </script>
 
-<div class="w-full max-w-2xl mx-auto my-16 px-2 gap-4 flex flex-col items-center">
+<div class="w-full color-white max-w-2xl mx-auto my-16 px-2 gap-4 flex flex-col items-center">
 	{#if userInfo}
 		<ul class="steps text-xs sm:text-base">
 			<li
@@ -373,9 +377,6 @@
 			</li>
 			<li class="step" class:step-primary={!!userInfo.paid}>
 				{$i18n.t('payment')}
-			</li>
-			<li class="step" class:step-primary={!!userInfo.paid && userInfo.trained}>
-				{$i18n.t('trainTheAI')}
 			</li>
 			<li class="step" class:step-primary={!!userInfo.paid && photosGenerated.length > 0}>
 				Generate your avatars
@@ -421,7 +422,7 @@
 							to learn from.
 						</p>
 						<Button
-							size="small"
+							size="medium"
 							type="submit"
 							disabled={userInfo.in_training}
 							loading={uploadLoading}
@@ -474,7 +475,7 @@
 				{:else if userInfo.paid}
 					<Button size="small" disabled>Paid</Button>
 				{:else}
-					<Button size="small" link="/checkout" animated>Pay now</Button>
+					<Button size="medium" link="/checkout" animated>Pay now</Button>
 				{/if}
 			</div>
 		</div>
@@ -498,11 +499,7 @@
 										alt=""
 										class="aspect-square rounded-box max-w-[60vw]"
 									/>
-									<img
-										src="logo-xs.png"
-										class="absolute right-2 bottom-2 opacity-85"
-										alt="Avatarify AI"
-									/>
+									
 
 									<Button
 										class="absolute right-3 top-3 text-white opacity-0 group-hover:opacity-100"
@@ -575,9 +572,9 @@
 					</label>
 					<select class="select select-bordered" id="instance_class" bind:value={instanceClass}>
 						<option disabled selected />
-						<option value="youngmale">youngmale</option>
+						<option value="youngmale">Young Male</option>
 						<option value="man">Male</option>
-						<option value="youngmaless">youngfemale</option>
+						<option value="youngmaless">Young Female</option>
 						<option value="woman">Female</option>
 					</select>
 				</div>
@@ -585,7 +582,7 @@
 
 			<!-- Move to component -->
 			
-
+			{#if !userInfo.trained && !userInfo.in_training}
 			<div class="form-control w-full max-w-xs">
 				<label class="label">
 					<span class="label-text text-inherit">Choose the style</span>
@@ -626,27 +623,12 @@
 					</ul>
 				</div>
 			</div>
+			{/if}
 
-			<div class="divider -mb-2">or</div>
-			<Input
-				label="Prompt"
-				id="prompt"
-				bind:value={prompt}
-				type="textarea"
-				block
-				containerClass="w-full max-w-xs"
-				inputClass="text-xs leading-none"
-				placeholder="closeup portrait of @me as a (WHAT YOU WANT)"
-				rows="6"
-			>
-				<p slot="altLabel" class="italic text-xs">
-					Find suggestions on <a href="https://lexica.art/" class="underline" target="_blank"
-						>lexica.art</a
-					>
-				</p>
-			</Input>
+			<div class="divider -mb-2"></div>
+		
 
-			{#if userInfo.trained && userInfo.counter < 110}
+			{#if userInfo.trained && userInfo.counter < 50}
 				<Button
 					size="small"
 					type="button"
@@ -671,11 +653,11 @@
 						animated
 					>
 						{#if userInfo.in_training}
-							In training
+							Generating..
 						{:else if userInfo.trained}
-							Trained
+							Generated
 						{:else}
-							Start training and generate
+							Generate
 						{/if}
 					</Button>
 					{#if userInfo.in_training}

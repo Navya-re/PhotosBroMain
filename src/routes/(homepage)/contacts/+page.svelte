@@ -3,8 +3,8 @@
 	<p>Need to get in touch with us? Here are a few ways you can reach us:</p>
 	<h3>Email</h3>
 	<p>
-		You can send us an email at <a href="mailto:rishikesava11@gmail.com"
-			>rishikesava11@gmail.com</a
+		You can send us an email at <a href="mailto:support@photosbro.com"
+			>support@photosbro.com</a
 		>.
 	</p>
 	<!-- 	
