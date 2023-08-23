@@ -18,7 +18,3 @@ We welcome contributions of any kind, including bug reports, feature requests, a
 
 ## License
 This project is licensed under the MIT license.
-# PhotosBroMain
-# PhotosBroMain
-# PhotosBroMain
-# PhotosBroMain
