@@ -10,8 +10,8 @@
 	>
 		<div class="navbar-start">
 			<Button ghost link="/" class="text-xl text-gradient font-bold" normalCase>
-				<img src="logo.png" alt="Avatarify AI" class="w-48" />
-				<!-- Avatarify AI -->
+				<img src="logo.png" alt="PhotosBro" class="w-48" />
+				<!-- PhotosBro -->
 			</Button>
 		</div>
 		<div class="navbar-end gap-2">

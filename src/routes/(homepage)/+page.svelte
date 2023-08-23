@@ -9,7 +9,7 @@
 	const manAvatars = Array.from({ length: 10 }, (_, index) => `avatars/man (${index + 1}).png`);
 	const womanAvatars = Array.from(
 		{ length: 12 },
-		(_, index) => `avatars/woman (${index + 1}).jpeg`
+		(_, index) => `avatars/woman (${index + 1}).png`
 	);
 	 let darkMode = false; // Variable to control dark mode state
 
@@ -74,7 +74,7 @@
 <div class="relative pb-28">
 	<div class="absolute top-0 right-[20%] -ml-12 overflow-visible w-40 aspect-square">
 		<img
-			src="avatars/woman_from.jpg"
+			src="avatars/woman_from.jpeg"
 			loading="lazy"
 			alt="Demo source"
 			class="absolute z-10 w-40 aspect-square rotate-12 shadow-md rounded-md"
