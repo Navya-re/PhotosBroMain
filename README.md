@@ -1,4 +1,4 @@
-# Avatarify AI
+# PhotosBro
 A platform for creating personal AI models for your profile picture
 
 ## Technologies used
@@ -9,7 +9,7 @@ A platform for creating personal AI models for your profile picture
 - 🧙🏽‍♂️ Training API: Replicate for REST services for training and photo generation
 
 ## Getting started
-1. Clone the repository: `https://github.com/epavanello/avatarify-ai.com`
+1. Clone the repository: `https://github.com/epavanello/photosbro.com
 2. Install the dependencies: `npm install`
 3. Start the development server: `npm run dev`
 
