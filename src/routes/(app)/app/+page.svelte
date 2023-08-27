@@ -414,7 +414,7 @@
 					>
 						<Input bind:input={inputFiles} accept="image/*" type="file" name="photos" multiple />
 						<p class="italic text-xs max-w-xs">
-							It is necessary to upload at least 5 photos (ideally at least a dozen) where your face
+							It is necessary to upload at least 15 photos (ideally at least a dozen) where your face
 							is clearly visible from multiple angles.
 						</p>
 						<p class="italic text-xs text-red-700 max-w-xs">
