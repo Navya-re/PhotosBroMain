@@ -618,7 +618,7 @@
                 src={`AIStyles/${name}.png`}
                 alt="Style Avatar"
               />
-              <div class="mt-2 p-2 bg-black bg-opacity-50 rounded-md">
+              <div class="mt-1 p-2 bg-black bg-opacity-50 rounded-md">
                 <p class="text-white font-semibold">{name}</p>
               </div>
             </div>
