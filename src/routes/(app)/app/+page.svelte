@@ -602,7 +602,7 @@
 						}}
 					/>
 					<ul
-						class="dropdown-content max-h-96 w-full overflow-auto p-2 shadow bg-base-100 rounded-box flex flex-col"
+						class="dropdown-content max-h-150 w-full overflow-auto p-5 shadow bg-base-200 rounded-box flex flex-col"
 					>
 						{#each getThemes(instanceClass) as { name }}
 							<li
