@@ -618,7 +618,7 @@
                 src={`AIStyles/${name}.png`}
                 alt="Style Avatar"
               />
-              <span class="text-white text-center mt-2">{name}</span>
+              <span class="text-white text-center mt-2 bg-black bg-opacity-50 py-1 rounded-lg">{name}</span>
             </div>
           {/each}
         </div>
@@ -627,6 +627,7 @@
   </div>
 </div>
 {/if}
+
 
 
 
