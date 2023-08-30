@@ -618,7 +618,7 @@
                 src={`AIStyles/${name}.png`}
                 alt="Style Avatar"
               />
-              <p class="text-white mt-2 text-lg font-semibold">{name}</p>
+              <p class="mt-2 text-white font-semibold">{name}</p>
             </div>
           {/each}
         </div>
@@ -627,6 +627,7 @@
   </div>
 </div>
 {/if}
+
 
 
 			<div class="divider -mb-2"></div>
