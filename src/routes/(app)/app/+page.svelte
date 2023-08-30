@@ -618,7 +618,8 @@
                 src={`AIStyles/${name}.png`}
                 alt="Style Avatar"
               />
-              <p class="mt-2 text-white font-semibold">{name}</p>
+              <p class="mt-2 text-white font-semibold">{name}</p><br>
+<br>
             </div>
           {/each}
         </div>
