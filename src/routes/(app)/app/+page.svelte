@@ -613,12 +613,14 @@
                 themeOpen = false;
               }}
             >
-              <img
-                class="h-32 block w-full rounded-md"
-                src={`AIStyles/${name}.png`}
-                alt="Style Avatar"
-              />
-              <span class="absolute inset-0 flex items-center justify-center text-white">{name}</span>
+              <div class="h-32 w-full rounded-md overflow-hidden">
+                <img
+                  class="h-full w-auto block mx-auto"
+                  src={`AIStyles/${name}.png`}
+                  alt="Style Avatar"
+                />
+                <span class="absolute top-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">{name}</span>
+              </div>
             </div>
           {/each}
         </div>
@@ -627,6 +629,7 @@
   </div>
 </div>
 {/if}
+
 
 
 
