@@ -618,23 +618,23 @@
 									class="h-24 block"
 									src="AIStyles/stylish.png"
 								/>
-									<img
+								<img
 									class="h-24 block"
-									src="AIStyles/Gamer.png"
+									src="AIStyles/gamer.png"
 								/>
 								<img
 									class="h-24 block"
 									src="AIStyles/cowboy.png"
 								/>
-									<img
+								<img
 									class="h-24 block"
-									src="AIStyles/Jedi.png"
+									src="AIStyles/jedi.png"
 								/>
 								<img
 									class="h-24 block"
 									src="AIStyles/anime.png"
 								/>
-									<img
+								<img
 									class="h-24 block"
 									src="AIStyles/cyberpunk.png"
 								/>
@@ -642,11 +642,11 @@
 									class="h-24 block"
 									src="AIStyles/superhero.png"
 								/>
-									<img
+								<img
 									class="h-24 block"
 									src="AIStyles/cricket.png"
 								/>
-									<img
+								<img
 									class="h-24 block"
 									src="AIStyles/wedding.png"
 								/>
