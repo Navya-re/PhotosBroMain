@@ -582,6 +582,8 @@
 
 <!-- Move to component -->
 
+<!-- Move to component -->
+
 {#if !userInfo.trained && !userInfo.in_training}
 <div class="form-control w-full max-w-xs">
   <label class="label">
@@ -614,7 +616,7 @@
               }}
             >
               <img
-                class="h-24 block"
+                class="h-32 block"
                 src={`AIStyles/${name}.png`}
                 alt="Style Avatar"
               />
@@ -627,6 +629,7 @@
   </div>
 </div>
 {/if}
+
 
 
 
