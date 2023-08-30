@@ -364,12 +364,12 @@
 	});
 </script>
 
+
 <style>
 .form-control {
-	z-index: 10;
+		z-index: 10;
   }
 </style>
-
 
 
 <div class="w-full color-white max-w-2xl mx-auto my-16 px-2 gap-4 flex flex-col items-center">
@@ -638,12 +638,8 @@
 </div>
 {/if}
 
-
-
-
 			<div class="divider -mb-2"></div>
-		
-<div>
+
 			{#if userInfo.trained && userInfo.counter < 50}
 				<Button
 					size="small"
@@ -684,4 +680,4 @@
 		</div>
 	{/if}
 </div>
-</div>
+
