@@ -583,6 +583,8 @@
 			<!-- Move to component -->
 			<!-- Move to component -->
 
+<!-- Move to component -->
+
 {#if !userInfo.trained && !userInfo.in_training}
 <div class="form-control w-full max-w-xs">
   <label class="label">
@@ -608,6 +610,7 @@
           {#each getThemes(instanceClass) as { name }}
             <div
               class="flex items-center gap-2 p-2 cursor-pointer hover:bg-blue-100"
+              style="background-color: black;"
               on:click={() => {
                 theme = name;
                 themeOpen = false;
@@ -618,7 +621,7 @@
                 src={`AIStyles/${name}.png`}
                 alt="Style Avatar"
               />
-              <span>{name}</span>
+              <span class="text-white">{name}</span>
             </div>
           {/each}
         </div>
@@ -627,6 +630,7 @@
   </div>
 </div>
 {/if}
+
 
 
 			<div class="divider -mb-2"></div>
