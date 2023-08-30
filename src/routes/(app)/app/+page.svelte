@@ -606,7 +606,7 @@
         <div class="bg-gray-900 p-4 rounded-lg shadow-lg w-96 max-h-80 overflow-y-auto grid gap-4 grid-cols-2">
           {#each getThemes(instanceClass) as { name }}
             <div
-              class="relative cursor-pointer"
+              class="relative cursor-pointer text-center"
               style="background-color: black;"
               on:click={() => {
                 theme = name;
@@ -618,7 +618,7 @@
                 src={`AIStyles/${name}.png`}
                 alt="Style Avatar"
               />
-              <span class="text-white text-center mt-2 bg-black bg-opacity-50 py-1 rounded-lg">{name}</span>
+              <p class="text-white mt-2 text-lg font-semibold">{name}</p>
             </div>
           {/each}
         </div>
@@ -627,12 +627,6 @@
   </div>
 </div>
 {/if}
-
-
-
-
-
-
 
 
 			<div class="divider -mb-2"></div>
