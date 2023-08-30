@@ -616,7 +616,7 @@
 								<!-- your theme images here -->
 								<img
 									class="h-24 block"
-									 src='avatars/woman' + (index + 1) + '.png'
+									 src="AIStyles/superhero.png"
 								/>
 							</li>
 						{#each}
