@@ -616,7 +616,39 @@
 								<!-- your theme images here -->
 								<img
 									class="h-24 block"
-									src="https://zphszdxhpylgalzpdorf.supabase.co/storage/v1/object/public/photos-generated/f456fdce-640e-4ec2-8dd3-63854f4ac2d3/nqeeei6ianhmtiplo57bq7nq3y.jpg"
+									src="AIStyles/stylish.png"
+								/>
+									<img
+									class="h-24 block"
+									src="AIStyles/Gamer.png"
+								/>
+								<img
+									class="h-24 block"
+									src="AIStyles/cowboy.png"
+								/>
+									<img
+									class="h-24 block"
+									src="AIStyles/Jedi.png"
+								/>
+								<img
+									class="h-24 block"
+									src="AIStyles/anime.png"
+								/>
+									<img
+									class="h-24 block"
+									src="AIStyles/cyberpunk.png"
+								/>
+								<img
+									class="h-24 block"
+									src="AIStyles/superhero.png"
+								/>
+									<img
+									class="h-24 block"
+									src="AIStyles/cricket.png"
+								/>
+									<img
+									class="h-24 block"
+									src="AIStyles/wedding.png"
 								/>
 							</li>
 						{/each}
