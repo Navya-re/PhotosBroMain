@@ -616,7 +616,7 @@
 								<!-- your theme images here -->
 								<img
 									class="h-24 block"
-									src="avatar.png"
+									src={`AIStyles/${name}.png`}
 								/>
 							</li>
 						{/each}
