@@ -581,7 +581,6 @@
 			{/if}
 
 			<!-- Move to component -->
-			
 			<!-- Move to component -->
 
 {#if !userInfo.trained && !userInfo.in_training}
@@ -604,8 +603,8 @@
       }}
     />
     {#if themeOpen}
-      <div class="fixed inset-0 flex items-center justify-center">
-        <div class="bg-white p-4 rounded shadow-md">
+      <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
+        <div class="bg-white p-4 rounded shadow-md w-96">
           {#each getThemes(instanceClass) as { name }}
             <div
               class="flex items-center gap-2 p-2 cursor-pointer hover:bg-blue-100"
@@ -628,6 +627,7 @@
   </div>
 </div>
 {/if}
+
 
 			<div class="divider -mb-2"></div>
 		
