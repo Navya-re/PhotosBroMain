@@ -603,27 +603,21 @@
     />
     {#if themeOpen}
       <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
-        <div class="bg-gray-900 p-4 rounded-lg shadow-lg w-96 max-h-80 overflow-y-auto">
+        <div class="bg-gray-900 p-4 rounded-lg shadow-lg w-96 max-h-80 overflow-y-auto grid gap-4 grid-cols-2">
           {#each getThemes(instanceClass) as { name }}
             <div
-              class="relative cursor-pointer hover:bg-gray-800"
+              class="relative cursor-pointer"
               style="background-color: black;"
               on:click={() => {
                 theme = name;
                 themeOpen = false;
               }}
             >
-              <div class="h-40 w-full rounded-lg overflow-hidden bg-black">
-                <img
-                  class="h-full w-full object-cover"
-                  src={`AIStyles/${name}.png`}
-                  alt="Style Avatar"
-                />
-                <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-                  <span class="text-lg font-semibold mb-2">{name}</span>
-                  <span class="text-sm opacity-75">Select this style</span>
-                </div>
-              </div>
+              <img
+                class="h-40 w-full rounded-lg object-cover"
+                src={`AIStyles/${name}.png`}
+                alt="Style Avatar"
+              />
             </div>
           {/each}
         </div>
@@ -632,6 +626,7 @@
   </div>
 </div>
 {/if}
+
 
 
 
