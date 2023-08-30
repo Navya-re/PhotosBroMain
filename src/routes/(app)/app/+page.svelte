@@ -601,10 +601,10 @@
 							themeOpen = true;
 						}}
 					/>
-					{#each getThemes(instanceClass) as { name }}
 					<ul
 						class="dropdown-content max-h-96 w-full overflow-auto p-2 shadow bg-base-100 rounded-box flex flex-col"
 					>
+						{#each getThemes(instanceClass) as { name }}
 							<li
 								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
 								on:click={() => {
@@ -616,12 +616,11 @@
 								<!-- your theme images here -->
 								<img
 									class="h-24 block"
-									 src="AIStyles/superhero.png"
+									src="https://zphszdxhpylgalzpdorf.supabase.co/storage/v1/object/public/photos-generated/f456fdce-640e-4ec2-8dd3-63854f4ac2d3/nqeeei6ianhmtiplo57bq7nq3y.jpg"
 								/>
 							</li>
-						{#each}
+						{/each}
 					</ul>
-					
 				</div>
 			</div>
 			{/if}
