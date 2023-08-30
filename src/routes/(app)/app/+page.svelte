@@ -588,8 +588,6 @@
 				</div>
 			{/if}
 
-<!-- Move to component -->
-
 {#if !userInfo.trained && !userInfo.in_training}
 <div class="form-control w-full max-w-xs">
   <label class="label">
@@ -612,6 +610,14 @@
     {#if themeOpen}
       <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
         <div class="bg-gray-900 p-4 rounded-lg shadow-lg w-96 max-h-80 overflow-y-auto grid gap-4 grid-cols-2">
+          <button
+            class="absolute top-2 right-2 text-white hover:text-gray-400"
+            on:click={() => {
+              themeOpen = false;
+            }}
+          >
+            Close
+          </button>
           {#each getThemes(instanceClass) as { name }}
             <div
               class="relative cursor-pointer text-center"
@@ -637,6 +643,7 @@
   </div>
 </div>
 {/if}
+
 
 			<div class="divider -mb-2"></div>
 
