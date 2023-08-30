@@ -618,6 +618,7 @@
 									class="h-24 block"
 									src="AIStyles/stylish.png"
 								/>
+								<span>{name}</span>
 								<img
 									class="h-24 block"
 									src="AIStyles/gamer.png"
