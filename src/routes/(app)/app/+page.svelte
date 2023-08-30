@@ -604,7 +604,6 @@
 					<ul
 						class="dropdown-content max-h-96 w-full overflow-auto p-2 shadow bg-base-100 rounded-box flex flex-col"
 					>
-						{#each getThemes(instanceClass) as { name }}
 							<li
 								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
 								on:click={() => {
@@ -731,7 +730,7 @@
 									src="AIStyles/wedding.png"
 								/>
 							</li>
-						{/each}
+
 					</ul>
 				</div>
 			</div>
