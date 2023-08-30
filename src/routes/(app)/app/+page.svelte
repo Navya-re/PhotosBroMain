@@ -581,7 +581,6 @@
 			{/if}
 
 <!-- Move to component -->
-
 <!-- Move to component -->
 
 {#if !userInfo.trained && !userInfo.in_training}
@@ -605,7 +604,7 @@
     />
     {#if themeOpen}
       <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
-        <div class="bg-white p-4 rounded shadow-md w-96 max-h-80 overflow-y-auto">
+        <div class="bg-transparent p-4 rounded shadow-md w-96 max-h-80 overflow-y-auto">
           {#each getThemes(instanceClass) as { name }}
             <div
               class="flex items-center gap-2 p-2 cursor-pointer hover:bg-blue-100"
