@@ -618,8 +618,9 @@
                 src={`AIStyles/${name}.png`}
                 alt="Style Avatar"
               />
-              <p class="mt-2 text-white font-semibold">{name}</p><br>
-<br>
+              <div class="mt-2 p-2 bg-black bg-opacity-50 rounded-md">
+                <p class="text-white font-semibold">{name}</p><br>
+              </div>
             </div>
           {/each}
         </div>
@@ -628,6 +629,7 @@
   </div>
 </div>
 {/if}
+
 
 
 
