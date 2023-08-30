@@ -619,7 +619,7 @@
                 alt="Style Avatar"
               />
               <div class="mt-2 p-2 bg-black bg-opacity-50 rounded-md">
-                <p class="text-white font-semibold">{name}</p><br>
+                <p class="text-white font-semibold">{name}</p>
               </div>
             </div>
           {/each}
