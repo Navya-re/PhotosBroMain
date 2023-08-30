@@ -581,7 +581,6 @@
 			{/if}
 
 <!-- Move to component -->
-<!-- Move to component -->
 
 {#if !userInfo.trained && !userInfo.in_training}
 <div class="form-control w-full max-w-xs">
@@ -607,7 +606,7 @@
         <div class="bg-transparent p-4 rounded shadow-md w-96 max-h-80 overflow-y-auto">
           {#each getThemes(instanceClass) as { name }}
             <div
-              class="flex items-center gap-2 p-2 cursor-pointer hover:bg-blue-100"
+              class="relative cursor-pointer hover:bg-blue-100"
               style="background-color: black;"
               on:click={() => {
                 theme = name;
@@ -615,11 +614,11 @@
               }}
             >
               <img
-                class="h-32 block"
+                class="h-32 block w-full rounded-md"
                 src={`AIStyles/${name}.png`}
                 alt="Style Avatar"
               />
-              <span class="text-white">{name}</span>
+              <span class="absolute inset-0 flex items-center justify-center text-white">{name}</span>
             </div>
           {/each}
         </div>
@@ -628,6 +627,7 @@
   </div>
 </div>
 {/if}
+
 
 
 
