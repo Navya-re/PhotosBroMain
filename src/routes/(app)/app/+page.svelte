@@ -618,7 +618,21 @@
 									class="h-24 block"
 									src="AIStyles/stylish.png"
 								/>
+							</li>
+							<li
+								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
+								on:click={() => {
+									theme = name;
+									themeOpen = false;
+								}}
+							>
 								<span>{name}</span>
+								<!-- your theme images here -->
+								<img
+									class="h-24 block"
+									src="AIStyles/gamer.png"
+								/>
+							</li>
 								<img
 									class="h-24 block"
 									src="AIStyles/gamer.png"
