@@ -633,6 +633,104 @@
 									src="AIStyles/gamer.png"
 								/>
 							</li>
+							<li
+								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
+								on:click={() => {
+									theme = name;
+									themeOpen = false;
+								}}
+							>
+								<span>{name}</span>
+								<!-- your theme images here -->
+								<img
+									class="h-24 block"
+									src="AIStyles/cowboy.png"
+								/>
+							</li>
+							<li
+								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
+								on:click={() => {
+									theme = name;
+									themeOpen = false;
+								}}
+							>
+								<span>{name}</span>
+								<!-- your theme images here -->
+								<img
+									class="h-24 block"
+									src="AIStyles/jedi.png"
+								/>
+							</li>
+							<li
+								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
+								on:click={() => {
+									theme = name;
+									themeOpen = false;
+								}}
+							>
+								<span>{name}</span>
+								<!-- your theme images here -->
+								<img
+									class="h-24 block"
+									src="AIStyles/anime.png"
+								/>
+							</li>
+							<li
+								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
+								on:click={() => {
+									theme = name;
+									themeOpen = false;
+								}}
+							>
+								<span>{name}</span>
+								<!-- your theme images here -->
+								<img
+									class="h-24 block"
+									src="AIStyles/cyberpunk.png"
+								/>
+							</li>
+							<li
+								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
+								on:click={() => {
+									theme = name;
+									themeOpen = false;
+								}}
+							>
+								<span>{name}</span>
+								<!-- your theme images here -->
+								<img
+									class="h-24 block"
+									src="AIStyles/superhero.png"
+								/>
+							</li>
+							<li
+								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
+								on:click={() => {
+									theme = name;
+									themeOpen = false;
+								}}
+							>
+								<span>{name}</span>
+								<!-- your theme images here -->
+								<img
+									class="h-24 block"
+									src="AIStyles/cricket.png"
+								/>
+							</li>
+							<li
+								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
+								on:click={() => {
+									theme = name;
+									themeOpen = false;
+								}}
+							>
+								<span>{name}</span>
+								<!-- your theme images here -->
+								<img
+									class="h-24 block"
+									src="AIStyles/wedding.png"
+								/>
+							</li>
 						{/each}
 					</ul>
 				</div>
