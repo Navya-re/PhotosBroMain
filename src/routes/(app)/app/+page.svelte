@@ -616,7 +616,7 @@
 								<!-- your theme images here -->
 								<img
 									class="h-24 block"
-									src="https://zphszdxhpylgalzpdorf.supabase.co/storage/v1/object/public/photos-generated/f456fdce-640e-4ec2-8dd3-63854f4ac2d3/nqeeei6ianhmtiplo57bq7nq3y.jpg"
+									src=`avatars/woman (${index + 1}).png`
 								/>
 							</li>
 						{/each}
