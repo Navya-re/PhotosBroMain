@@ -633,39 +633,6 @@
 									src="AIStyles/gamer.png"
 								/>
 							</li>
-								<img
-									class="h-24 block"
-									src="AIStyles/gamer.png"
-								/>
-								<img
-									class="h-24 block"
-									src="AIStyles/cowboy.png"
-								/>
-								<img
-									class="h-24 block"
-									src="AIStyles/jedi.png"
-								/>
-								<img
-									class="h-24 block"
-									src="AIStyles/anime.png"
-								/>
-								<img
-									class="h-24 block"
-									src="AIStyles/cyberpunk.png"
-								/>
-								<img
-									class="h-24 block"
-									src="AIStyles/superhero.png"
-								/>
-								<img
-									class="h-24 block"
-									src="AIStyles/cricket.png"
-								/>
-								<img
-									class="h-24 block"
-									src="AIStyles/wedding.png"
-								/>
-							</li>
 						{/each}
 					</ul>
 				</div>
