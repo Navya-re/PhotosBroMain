@@ -615,7 +615,7 @@
 								<span>{name}</span>
 								<!-- your theme images here -->
 								<img
-									class="h-24 block"
+									class="h-30 block"
 									src={`AIStyles/${name}.png`}
 								/>
 							</li>
