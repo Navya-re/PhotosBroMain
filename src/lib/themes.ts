@@ -62,7 +62,7 @@ export const prompts: Theme[] = [
 			'realistic closeup portrait of @me as a young indian cricket player, highly detailed, looking straight into camera, cricket background, intricate details,wearing the iconic blue jersey of the Indian cricket team, art by marko djurdjevic,greg rutkowski,wlop, fredperry,digital painting,rossdraws.'
 	},
 	{
-		name: 'Indian Wedding',
+		name: 'Wedding',
 		instance_classes: [],
 		prompt:
 			'realistic closeup face portrait of @me as a Indian wedding groom, highly detailed, looking straight into camera, wedding background, intricate details, wearing indian wedding dress, art by marko djurdjevic, greg rutkowski, wlop, fredperry, digital painting, rossdraws.'
