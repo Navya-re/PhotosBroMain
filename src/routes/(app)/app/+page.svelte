@@ -582,48 +582,52 @@
 
 			<!-- Move to component -->
 			
-			{#if !userInfo.trained && !userInfo.in_training}
-			<div class="form-control w-full max-w-xs">
-				<label class="label">
-					<span class="label-text text-inherit">Choose the style</span>
-				</label>
-				<div
-					class="dropdown dropdown-top w-full"
-					class:dropdown-open={themeOpen}
-					use:clickoutside
-					on:clickoutside={() => (themeOpen = false)}
-				>
-					<input
-						bind:value={theme}
-						class="w-full input input-bordered"
-						readonly
-						on:focus={() => {
-							themeOpen = true;
-						}}
-					/>
-					<ul
-						class="dropdown-content max-h-150 w-full overflow-auto p-5 shadow bg-base-200 rounded-box flex flex-col"
-					>
-						{#each getThemes(instanceClass) as { name }}
-							<li
-								class="px-2 py-1 flex flex-row justify-between items-center gap-2 hover:bg-base-200 rounded-md"
-								on:click={() => {
-									theme = name;
-									themeOpen = false;
-								}}
-							>
-								<span>{name}</span>
-								<!-- your theme images here -->
-								<img
-									class="h-30 block"
-									src={`AIStyles/${name}.png`}
-								/>
-							</li>
-						{/each}
-					</ul>
-				</div>
-			</div>
-			{/if}
+			<!-- Move to component -->
+
+{#if !userInfo.trained && !userInfo.in_training}
+<div class="form-control w-full max-w-xs">
+  <label class="label">
+    <span class="label-text text-inherit">Choose the style</span>
+  </label>
+  <div
+    class="relative w-full"
+    class:popup-open={themeOpen}
+    use:clickoutside
+    on:clickoutside={() => (themeOpen = false)}
+  >
+    <input
+      bind:value={theme}
+      class="w-full input input-bordered"
+      readonly
+      on:focus={() => {
+        themeOpen = true;
+      }}
+    />
+    {#if themeOpen}
+      <div class="fixed inset-0 flex items-center justify-center">
+        <div class="bg-white p-4 rounded shadow-md">
+          {#each getThemes(instanceClass) as { name }}
+            <div
+              class="flex items-center gap-2 p-2 cursor-pointer hover:bg-blue-100"
+              on:click={() => {
+                theme = name;
+                themeOpen = false;
+              }}
+            >
+              <img
+                class="h-24 block"
+                src={`AIStyles/${name}.png`}
+                alt="Style Avatar"
+              />
+              <span>{name}</span>
+            </div>
+          {/each}
+        </div>
+      </div>
+    {/if}
+  </div>
+</div>
+{/if}
 
 			<div class="divider -mb-2"></div>
 		
