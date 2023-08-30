@@ -364,6 +364,14 @@
 	});
 </script>
 
+<style>
+.form-control {
+	z-index: 10;
+  }
+</style>
+
+
+
 <div class="w-full color-white max-w-2xl mx-auto my-16 px-2 gap-4 flex flex-col items-center">
 	{#if userInfo}
 		<ul class="steps text-xs sm:text-base">
