@@ -587,12 +587,7 @@
   <label class="label">
     <span class="label-text text-inherit">Choose the style</span>
   </label>
-  <div
-    class="relative w-full"
-    class:popup-open={themeOpen}
-    use:clickoutside
-    on:clickoutside={() => (themeOpen = false)}
-  >
+  <div class="relative w-full">
     <input
       bind:value={theme}
       class="w-full input input-bordered"
@@ -602,8 +597,31 @@
       }}
     />
     {#if themeOpen}
-      <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
-        <div class="bg-gray-900 p-4 rounded-lg shadow-lg w-96 max-h-80 overflow-y-auto grid gap-4 grid-cols-2">
+      <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 transition-opacity duration-300">
+        <div
+          class="bg-gray-900 p-4 rounded-lg shadow-lg w-96 max-h-80 overflow-y-auto grid gap-4 grid-cols-2 relative"
+          style="z-index: 100;"
+        >
+          <button
+            class="absolute top-0 right-0 m-2 text-white hover:text-gray-300 transition-colors duration-200"
+            on:click={() => {
+              themeOpen = false;
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.293 3.293a1 1 0 011.414 0L10 8.586l5.293-5.293a1 1 0 111.414 1.414L11.414 10l5.293 5.293a1 1 0 01-1.414 1.414L10 11.414l-5.293 5.293a1 1 0 01-1.414-1.414L8.586 10 3.293 4.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
           {#each getThemes(instanceClass) as { name }}
             <div
               class="relative cursor-pointer text-center"
@@ -629,6 +647,7 @@
   </div>
 </div>
 {/if}
+
 
 
 
