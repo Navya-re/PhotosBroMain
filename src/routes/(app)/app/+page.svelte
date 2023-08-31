@@ -62,7 +62,7 @@
 		uploadLoading = true;
 		try {
 			if (inputFiles.files) {
-				if ((photosForTrain?.length || 0) + inputFiles.files?.length > 20) {
+				if ((photosForTrain?.length || 0) + inputFiles.files?.length > 30) {
 					throw new Error('You can upload a maximum of 20 photos');
 				}
 				const requests = [];
