@@ -1,19 +1,11 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 
-import adapter from '@sveltejs/adapter-netlify';
- 
-export default {
-  kit: {
-    // default options are shown
-    adapter: adapter({
-      // if true, will create a Netlify Edge Function rather
-      // than using standard Node-based functions
-      edge: true,
- 
-      // if true, will split your app into multiple functions
-      // instead of creating a single one for the entire app.
-      // if `edge` is true, this option cannot be used
-      split: false
-    })
-  }
+/** @type {import('vite').UserConfig} */
+const config = {
+	plugins: [sveltekit()],
+	test: {
+		include: ['src/**/*.{test,spec}.{js,ts}']
+	}
 };
+
+export default config;
