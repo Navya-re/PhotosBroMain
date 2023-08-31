@@ -17,7 +17,7 @@ export const prompts: Theme[] = [
 		name: 'Stylish',
 		instance_classes: [],
 		prompt:
-			'realistic closeup portrait of @me as a stylish fashion designer. Rich ethnic fashion heritage, looking straight into camera, centred, creative dark background, dark lighting, intricate textiles, fusion styles. Art by Marko Djurdjevic, Greg Rutkowski, Wlop, Fred Perry, Digital Painting, Rossdraws.'
+			'80s face portrait of @me, creative background, white pearl neckless, fashion model in oversized white clothes, looking to camera, centered uncropped, official balmain editorial, dramatic lighting highly detailed, analog photo, overglaze, 80mm Sigma f/1.4 or any ZEISS lens'
 	},
 	{
 		name: 'Gamer',
