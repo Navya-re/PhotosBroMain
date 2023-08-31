@@ -649,7 +649,7 @@
 			<div class="divider -mb-2"></div>
 
 				
-			{#if !userInfo.trained && userInfo.counter < 50}
+			{#if userInfo.trained && userInfo.counter < 50}
 				<Button
 					size="small"
 					type="button"
