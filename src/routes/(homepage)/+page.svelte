@@ -20,8 +20,15 @@
 </script>
 
 <div class="prose px-2 lg:prose-xl text-center py-16 min-w-full">
-	<h2>Create stunning photos with AI-based generation</h2>
 
+	<h2> </h2>
+<h2>
+  Create
+  <span class="magic">
+    <span class="magic-text">stunning photos</span>
+  </span>
+with AI-based generation
+</h2>
 	<p class="max-w-2xl mx-auto">
 		Generate unique, professional-looking images tailored to your taste with our AI-based service.
 		Try it now and see the possibilities.
@@ -94,7 +101,7 @@
 <div
 	class="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12 px-8"
 >
-	<div class="relative z-10 -mx-4 group md:w-6/12 md:mx-0 lg:w-5/12">
+	<div class="card relative z-10 -mx-4 group md:w-6/12 md:mx-0 lg:w-5/12">
 		<div aria-hidden="true" class="absolute top-0 w-full h-full rounded-2xl bg-black shadow-xl" style="background-color: #191b1c;" />
 		<div class="relative p-6 space-y-6 lg:p-8">
 			<h3 class="text-3xl font-semibold text-center text-white">50 Ai Avatars</h3>
@@ -260,4 +267,171 @@
 			transform: translateX(var(--scroll-end));
 		}
 	}
+
+:root {  
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes scale {
+  from, to {
+    transform: scale(0);
+  }
+  
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+  display: grid;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+  place-items: center;
+}
+
+h1 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(2em, 2vw, 4em);
+  font-weight: 400;
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 > .magic {
+  display: inline-block;
+  position: relative;
+}
+
+h2 > .magic > .magic-star {
+  --size: clamp(20px, 1.5vw, 30px);
+  
+  animation: scale 700ms ease forwards;
+  display: block;
+  height: var(--size);
+  left: var(--star-left);
+  position: absolute;
+  top: var(--star-top);
+  width: var(--size);
+}
+
+h2 > .magic > .magic-star > svg {
+  animation: rotate 1000ms linear infinite;
+  display: block;
+  opacity: 0.7;
+}
+
+h2 > .magic > .magic-star > svg > path {
+  fill: var(--violet);
+}
+
+h2 > .magic > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+/* -- YouTube Link Styles -- */
+
+#source-link {
+  top: 60px;
+}
+
+#source-link > i {
+  color: rgb(94, 106, 210);
+}
+
+#yt-link {  
+  top: 10px;
+}
+
+#yt-link > i {
+  color: rgb(239, 83, 80);
+}
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;  
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 600ms, border-color 600ms;
+  z-index: 10000;
+}
+
+.meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.meta-link > i, .meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  transition: color 600ms;
+}
+:root {
+  --border: rgb(3, 169, 244);
+  
+  --g1: rgb(98, 0, 234);
+  --g2: rgb(236, 64, 122);
+  --g3: rgb(253, 216, 53);
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+  display: grid;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  place-items: center;
+}
+
+
 </style>
