@@ -647,7 +647,8 @@
 
 			<div class="divider -mb-2"></div>
 
-
+				
+			{#if userInfo.counter < 50}
 				<Button
 					size="small"
 					type="button"
