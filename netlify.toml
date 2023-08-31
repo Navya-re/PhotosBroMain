@@ -1,4 +1,12 @@
-[[redirects]]
-  from = "/*"
-  status = 200
-  to = "/.netlify/functions/render"
+[build]
+  command = "npm run build"
+  publish = "build/publish/"
+  functions = "build/functions/"
+  environment = { NODE_VERSION = "14.17.5" }
+
+[dev]
+ command = "svelte-kit dev"
+ 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
